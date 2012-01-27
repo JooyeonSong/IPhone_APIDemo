@@ -1,0 +1,7 @@
+build/
+xcuserdata/
+project.xcworkspace/
+.DS_Store
+mvoip/
+core
+extlibs
