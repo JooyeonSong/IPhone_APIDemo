@@ -23,6 +23,9 @@
 		44934B2814D114DE0018064D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44934B2614D114DE0018064D /* InfoPlist.strings */; };
 		44934B2A14D114DE0018064D /* APIDemoTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 44934B2914D114DE0018064D /* APIDemoTests.h */; };
 		44934B2C14D114DE0018064D /* APIDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44934B2B14D114DE0018064D /* APIDemoTests.m */; };
+		BA05D79D14D535C000FFAA31 /* TabsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA05D79B14D535C000FFAA31 /* TabsViewController.m */; };
+		BA05D79E14D535C000FFAA31 /* TabsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA05D79C14D535C000FFAA31 /* TabsViewController.xib */; };
+		BA05D7A214D536DE00FFAA31 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA05D7A114D536DE00FFAA31 /* CategoryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,11 @@
 		44934B2714D114DE0018064D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		44934B2914D114DE0018064D /* APIDemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIDemoTests.h; sourceTree = "<group>"; };
 		44934B2B14D114DE0018064D /* APIDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIDemoTests.m; sourceTree = "<group>"; };
+		BA05D79A14D535C000FFAA31 /* TabsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabsViewController.h; sourceTree = "<group>"; };
+		BA05D79B14D535C000FFAA31 /* TabsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabsViewController.m; sourceTree = "<group>"; };
+		BA05D79C14D535C000FFAA31 /* TabsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabsViewController.xib; sourceTree = "<group>"; };
+		BA05D7A014D536DE00FFAA31 /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
+		BA05D7A114D536DE00FFAA31 /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +124,7 @@
 		44934B0114D114DE0018064D /* APIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BA05D79F14D5362C00FFAA31 /* Categories */,
 				44934B0A14D114DE0018064D /* APIDemoAppDelegate.h */,
 				44934B0B14D114DE0018064D /* APIDemoAppDelegate.m */,
 				44934B0D14D114DE0018064D /* MainWindow.xib */,
@@ -155,6 +164,26 @@
 				44934B2614D114DE0018064D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA05D79814D533E600FFAA31 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				BA05D79A14D535C000FFAA31 /* TabsViewController.h */,
+				BA05D79B14D535C000FFAA31 /* TabsViewController.m */,
+				BA05D79C14D535C000FFAA31 /* TabsViewController.xib */,
+			);
+			name = Tabs;
+			sourceTree = "<group>";
+		};
+		BA05D79F14D5362C00FFAA31 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				BA05D79814D533E600FFAA31 /* Tabs */,
+				BA05D7A014D536DE00FFAA31 /* CategoryViewController.h */,
+				BA05D7A114D536DE00FFAA31 /* CategoryViewController.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +259,7 @@
 				44934B0614D114DE0018064D /* InfoPlist.strings in Resources */,
 				44934B0F14D114DE0018064D /* MainWindow.xib in Resources */,
 				44934B1514D114DE0018064D /* RootViewController.xib in Resources */,
+				BA05D79E14D535C000FFAA31 /* TabsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +298,8 @@
 				44934B0814D114DE0018064D /* main.m in Sources */,
 				44934B0C14D114DE0018064D /* APIDemoAppDelegate.m in Sources */,
 				44934B1214D114DE0018064D /* RootViewController.m in Sources */,
+				BA05D79D14D535C000FFAA31 /* TabsViewController.m in Sources */,
+				BA05D7A214D536DE00FFAA31 /* CategoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +475,7 @@
 				44934B3114D114DE0018064D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44934B3214D114DE0018064D /* Build configuration list for PBXNativeTarget "APIDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +484,7 @@
 				44934B3414D114DE0018064D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

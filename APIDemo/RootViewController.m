@@ -13,6 +13,9 @@
 
 - (void)viewDidLoad
 {
+    self.title = @"APIDemo";
+    // Add categories
+    categories = [[NSArray alloc] initWithObjects:@"Tabs", nil];
     [super viewDidLoad];
 }
 
@@ -52,7 +55,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return categories.count;
 }
 
 // Customize the appearance of table view cells.
@@ -66,6 +69,7 @@
     }
 
     // Configure the cell.
+    cell.textLabel.text=[categories objectAtIndex:indexPath.row];
     return cell;
 }
 
@@ -112,6 +116,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSString* className = [NSString stringWithFormat:@"%@ViewController", [categories objectAtIndex:indexPath.row]];
+    NSLog(@"[%@ tableView didSelectRowAtIndexPath] index=%d className=%@", [self class], indexPath.row, className);
+    
+    CategoryViewController *subViewController = [[NSClassFromString(className) alloc] initWithNibName:className bundle:nil];
+    [self.navigationController pushViewController:subViewController animated:YES];
+    [subViewController release];
+    
     /*
     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
     // ...
@@ -140,6 +151,7 @@
 - (void)dealloc
 {
     [super dealloc];
+    [categories release];
 }
 
 @end
