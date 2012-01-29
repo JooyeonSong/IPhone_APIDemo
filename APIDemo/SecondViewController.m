@@ -1,24 +1,20 @@
 //
-//  TabsViewController.m
+//  SecondViewController.m
 //  APIDemo
 //
 //  Created by Lim Eugene on 12. 1. 29..
 //  Copyright (c) 2012년 euegne@kakao.com. All rights reserved.
 //
 
-#import "TabsViewController.h"
+#import "SecondViewController.h"
 
-@implementation TabsViewController
-
-//@synthesize view;
-@synthesize tabBarController;
+@implementation SecondViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.title = @"Tabs";
     }
     return self;
 }
@@ -31,21 +27,22 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
-- (void)dealloc
-{
-    //[view release];
-    [tabBarController release];
-    [super dealloc];
-}
-
 #pragma mark - View lifecycle
 
+/*
+// Implement loadView to create a view hierarchy programmatically, without using a nib.
+- (void)loadView
+{
+}
+*/
+
+/*
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    [self.view addSubview:tabBarController.view];
 }
+*/
 
 - (void)viewDidUnload
 {

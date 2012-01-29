@@ -26,6 +26,8 @@
 		BA05D79D14D535C000FFAA31 /* TabsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA05D79B14D535C000FFAA31 /* TabsViewController.m */; };
 		BA05D79E14D535C000FFAA31 /* TabsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA05D79C14D535C000FFAA31 /* TabsViewController.xib */; };
 		BA05D7A214D536DE00FFAA31 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA05D7A114D536DE00FFAA31 /* CategoryViewController.m */; };
+		BA05D7A514D5410A00FFAA31 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA05D7A414D5410A00FFAA31 /* FirstViewController.m */; };
+		BA05D7A814D5412100FFAA31 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA05D7A714D5412100FFAA31 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,10 @@
 		BA05D79C14D535C000FFAA31 /* TabsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabsViewController.xib; sourceTree = "<group>"; };
 		BA05D7A014D536DE00FFAA31 /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
 		BA05D7A114D536DE00FFAA31 /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
+		BA05D7A314D5410A00FFAA31 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		BA05D7A414D5410A00FFAA31 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		BA05D7A614D5412100FFAA31 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		BA05D7A714D5412100FFAA31 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +178,10 @@
 				BA05D79A14D535C000FFAA31 /* TabsViewController.h */,
 				BA05D79B14D535C000FFAA31 /* TabsViewController.m */,
 				BA05D79C14D535C000FFAA31 /* TabsViewController.xib */,
+				BA05D7A314D5410A00FFAA31 /* FirstViewController.h */,
+				BA05D7A414D5410A00FFAA31 /* FirstViewController.m */,
+				BA05D7A614D5412100FFAA31 /* SecondViewController.h */,
+				BA05D7A714D5412100FFAA31 /* SecondViewController.m */,
 			);
 			name = Tabs;
 			sourceTree = "<group>";
@@ -300,6 +310,8 @@
 				44934B1214D114DE0018064D /* RootViewController.m in Sources */,
 				BA05D79D14D535C000FFAA31 /* TabsViewController.m in Sources */,
 				BA05D7A214D536DE00FFAA31 /* CategoryViewController.m in Sources */,
+				BA05D7A514D5410A00FFAA31 /* FirstViewController.m in Sources */,
+				BA05D7A814D5412100FFAA31 /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

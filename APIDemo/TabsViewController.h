@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface TabsViewController : CategoryViewController
+{
+    UITabBarController *tabBarController;
+}
+
+@property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
 
 @end

@@ -122,14 +122,6 @@
     CategoryViewController *subViewController = [[NSClassFromString(className) alloc] initWithNibName:className bundle:nil];
     [self.navigationController pushViewController:subViewController animated:YES];
     [subViewController release];
-    
-    /*
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-    // ...
-    // Pass the selected object to the new view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
-    [detailViewController release];
-	*/
 }
 
 - (void)didReceiveMemoryWarning
